@@ -34,3 +34,22 @@ for i in x.T:
 print("\nIterating value by value")
 for i in x.flat:
     print (i)
+#Stacking Numpy Array
+print("\nStacking Numpy Array")
+print("\nHorizontal Stacking- concatenate array in horizontal axis")
+new_array = numpy.hstack((x,x))
+print(new_array)
+print("\nVertical Stacking- concatenate array in vertical axis")
+new_array = numpy.vstack((x,x))
+print(new_array)
+
+#Splitting Numpy Array
+print("\nsplitting Numpy Array")
+print("\nHorizontal splitting")
+new_array = numpy.hsplit(x,5)
+print(new_array)
+print("\nVertical splitting")
+new_array = numpy.vsplit(x,3)
+print(new_array)
+print("\n2nd Array of splitted array")
+print(new_array[1])
